@@ -1,0 +1,31 @@
+.sideNavContainer {
+  @apply hidden lg:flex lg:items-center md:flex-col md:justify-between md:bg-white md:border-r md:border-[#EAEDEC] fixed top-0 bottom-0 left-0 md:h-screen md:px-9 md:py-12;
+}
+
+.sideNavLinksContainer {
+  @apply flex max-[768px]:justify-between w-full lg:flex-col md:items-center min-[1440px]:items-start lg:gap-5;
+}
+
+.sideNavLinks {
+  @apply flex max-[768px]:flex-col text-3xl items-center gap-3 cursor-pointer;
+}
+
+.sideNavLinksActive {
+  @apply flex max-[768px]:flex-col text-3xl text-[green] items-center gap-3 lg:p-4 lg:bg-[#E3F8EF] lg:rounded-md min-[1440px]:py-3 min-[1440px]:px-2;
+}
+
+.sideNavOptions {
+  @apply lg:hidden min-[1440px]:block text-[#6F7A8D];
+}
+
+.sideNavOptionsActive {
+  @apply lg:hidden min-[1440px]:block text-[green] font-bold;
+}
+
+.sideNavMobile {
+  @apply flex items-center justify-between fixed bottom-0 bg-white pt-3 pb-10 px-8 w-full lg:hidden z-20;
+}
+
+.navCartMobile {
+  @apply flex items-center justify-between fixed bottom-0 bg-white pt-3 pb-10 px-8 w-full lg:hidden -z-20;
+}

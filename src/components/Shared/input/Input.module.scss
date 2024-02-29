@@ -1,0 +1,7 @@
+.container {
+  @apply relative rounded-md border border-[#D0D5DD] p-4;
+}
+
+.passwordContainer {
+  @apply absolute inset-y-0 right-0 flex cursor-pointer items-center pr-2;
+}

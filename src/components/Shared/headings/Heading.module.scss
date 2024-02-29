@@ -1,0 +1,39 @@
+.H1 {
+  @apply font-sans font-semibold text-[40px]  leading-[48px];
+}
+
+.H2 {
+  @apply font-sans font-semibold text-4xl  leading-[43px];
+}
+
+.H3 {
+  @apply font-sans font-semibold text-[32px] leading-[38px];
+}
+
+.H4 {
+  @apply font-sans font-semibold text-[28px] leading-[33px];
+}
+
+.H5 {
+  @apply font-sans font-semibold text-2xl  leading-7;
+}
+
+.H6 {
+  @apply font-sans font-semibold text-xl leading-6;
+}
+
+.P {
+  @apply font-sans text-sm md:text-base  leading-6;
+}
+
+.P2 {
+  @apply font-sans text-base leading-6;
+}
+
+.Small {
+  @apply font-sans font-medium text-5xl leading-[48px];
+}
+
+.Large {
+  @apply font-sans font-medium text-[56px] leading-[56px];
+}

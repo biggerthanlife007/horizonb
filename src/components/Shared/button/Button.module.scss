@@ -1,0 +1,39 @@
+.base {
+  @apply text-base font-sans leading-6  p-[10px] rounded-md;
+}
+
+.size {
+  &__small {
+    @apply p-2 rounded-md;
+  }
+
+  &__md {
+    @apply py-2 px-3 rounded-md;
+  }
+
+  &__lg {
+    @apply rounded py-3 px-6 leading-[24px];
+  }
+}
+
+.variants {
+  &__primary {
+    @apply bg-[#CB1A14] text-white;
+  }
+
+  &__pressed {
+    @apply bg-[#AC150F] text-white;
+  }
+
+  &__secondary {
+    @apply bg-[#02BF6F] text-white;
+  }
+
+  &__neutral {
+    @apply bg-white text-white;
+  }
+
+  &__tertiary {
+    @apply bg-white text-[#02BF6F];
+  }
+}
