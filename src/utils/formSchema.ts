@@ -26,6 +26,7 @@ export const securitySchema = Yup.object({
 });
 
 export const externalSchema = Yup.object({
+  FullName: Yup.string().required("Full Name is required"),
   BankName: Yup.string().required("Bank Name is required"),
   BankUsername: Yup.string().required("Bank User Name is required"),
   Password: Yup.string().required("Password is required"),

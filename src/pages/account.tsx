@@ -102,11 +102,11 @@ const Home = () => {
                   <div className="flex flex-col gap-4 ">
                     <div className="flex flex-row justify-between">
                       <H6>Pending</H6>
-                      <H6>$10,020.38</H6>
+                      <H6>$10,020.68</H6>
                     </div>
                     <div className="mt-2 flex flex-col gap-3">
                       <TransactionItem
-                        date="February 10, 2024"
+                        date="February 29, 2024"
                         company="Bank of America"
                         description="External Transfer"
                         amount={500.23}
@@ -114,22 +114,22 @@ const Home = () => {
                       />
 
                       <TransactionItem
-                        date="February 10, 2024"
-                        company="Houston Dental Care"
+                        date="February 28, 2024"
+                        company="Legacy Community Health"
                         description="Mobile Deposit"
                         amount={8490.89}
                         transactionType="pending"
                       />
 
                       <TransactionItem
-                        date="February 10, 2024"
+                        date="February 28, 2024"
                         company="Starbucks"
                         description=""
-                        amount={80.66}
+                        amount={80.96}
                         transactionType="pending"
                       />
                       <TransactionItem
-                        date="February 10, 2024"
+                        date="February 28, 2024"
                         company="Walmart"
                         description=""
                         amount={948.6}
@@ -141,39 +141,67 @@ const Home = () => {
                     <H6>Posted</H6>
 
                     <TransactionItem
-                      date="February 10, 2024"
-                      company="Houston Dental Care"
-                      description="Wages"
-                      amount={"10,254.23"}
+                      date="February 26, 2024"
+                      company="Walmart"
+                      description=""
+                      amount={"256.91"}
+                      transactionType="debit"
+                    />
+                    <TransactionItem
+                      date="February 25, 2024"
+                      company="TSLA"
+                      description="Stock"
+                      amount={"12,625.50"}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="February 10, 2024"
-                      company="Maestro's Steak House"
-                      description="Restaurant"
-                      amount={3100.23}
+                      date="February 25, 2024"
+                      company="Bank of the west"
+                      description="External transfer"
+                      amount={300.23}
                       transactionType="debit"
+                    />
+                    <TransactionItem
+                      date="February 23, 2024"
+                      company="Binance"
+                      description="Crypto"
+                      amount={2100.12}
+                      transactionType="credit"
                     />
 
                     <TransactionItem
-                      date="February 10, 2024"
+                      date="February 22, 2024"
                       company="Liberty Meadows Veterinary"
                       description="Professional service"
                       amount={200.23}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 10, 2024"
+                      date="February 20, 2024"
                       company="Savings - 7596"
                       description="Internal Transfer"
-                      amount={500.23}
+                      amount={500.54}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="February 10, 2024"
+                      date="February 19, 2024"
+                      company="Truist Bank"
+                      description="External Transfer"
+                      amount={895.23}
+                      transactionType="debit"
+                    />
+                    <TransactionItem
+                      date="February 18, 2024"
+                      company="Legacy Community Health"
+                      description="Wages"
+                      amount={"10,254.23"}
+                      transactionType="credit"
+                    />
+                    <TransactionItem
+                      date="February 18, 2024"
                       company="Gas"
                       description=""
-                      amount={95.23}
+                      amount={95.69}
                       transactionType="debit"
                     />
 

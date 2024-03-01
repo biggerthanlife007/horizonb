@@ -45,7 +45,7 @@ const Sure: React.FC<Task> = ({ onClose }) => {
           variant="filled"
           className=""
         >
-          <Processing closeModal={handleClose} />
+          <Processing />
         </Modal>
       )}
     </div>
