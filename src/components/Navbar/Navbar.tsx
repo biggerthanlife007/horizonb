@@ -6,6 +6,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCancelCircle } from "react-icons/im";
 import Logo from "./Logo";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -51,16 +52,16 @@ const Navbar = () => {
           <BiSearchAlt2 className="hidden lg:block" />
           <CiCircleQuestion className="hidden  lg:block" />
           <CiLocationOn className="hidden  lg:block" />
-          <a href="/login" className=" flex flex-row gap-1 items-center ">
+          <Link href="/login" className=" flex flex-row gap-1 items-center ">
             <IoPersonOutline /> <P className="whitespace-nowrap">Sign In</P>
-          </a>
+          </Link>
         </div>
-        <a
+        <Link
           href="/login"
           className="flex flex-col items-center ml-auto mt-1 lg:hidden"
         >
           <IoPersonOutline /> <P className="whitespace-nowrap">Sign In</P>
-        </a>
+        </Link>
       </div>
       <hr className="mt-2" />
     </div>

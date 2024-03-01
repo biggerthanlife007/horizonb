@@ -10,6 +10,7 @@ import { Formik } from "formik";
 import { loginSchema } from "@/utils/formSchema";
 import Modal from "@/components/Shared/Modal/Modal";
 import Invalid from "@/components/Modals/Invalid";
+import Link from "next/link";
 
 const Login: React.FC = () => {
   const [isModalOpen, setisModalOpen] = useState(false);
@@ -46,10 +47,10 @@ const Login: React.FC = () => {
 
   return (
     <div className="w-full">
-      <a href="/" className="flex flex-row items-center justify-start gap-2">
+      <Link href="/" className="flex flex-row items-center justify-start gap-2">
         <Image src={Logo} alt={""} className="w-5 h-5" />
         <H4 className="text-[#3bb53d] whitespace-nowrap">Horizon Bank</H4>
-      </a>
+      </Link>
       <div className="bg-[#eee] mt-2 h-[100vh]">
         <div className="flex flex-col items-center justify-center z-50">
           <div className="bg-white w-5/6 border border-[gray] rounded-[10px] px-10 md:w-2/3 lg:w-1/3 py-8 mt-20">
@@ -104,12 +105,12 @@ const Login: React.FC = () => {
           </div>
 
           <div className="flex flex-col text-[gray] items-center justify-center gap-4 mt-4 md:flex-row md:items-end md:justify-around md:mt-28">
-            <a>Contact us</a>
-            <a>Terms & Conditions</a>
-            <a>Privacy Pledge</a>
-            <a>Security</a>
-            <a>Accessible Banking</a>
-            <a>Leave Feedback</a>
+            <Link href="">Contact us</Link>
+            <Link href="">Terms & Conditions</Link>
+            <Link href="">Privacy Pledge</Link>
+            <Link href="">Security</Link>
+            <Link href="">Accessible Banking</Link>
+            <Link href="">Leave Feedback</Link>
           </div>
           <div>
             <Footer2 />
