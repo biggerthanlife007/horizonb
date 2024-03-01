@@ -1,7 +1,7 @@
 import React from "react";
 import Car from "@/assets/images/car.svg";
 import Flower from "@/assets/images/flower.svg";
-import Ipad from "@/assets/images/Ipad.svg";
+import Ipad from "@/assets/images/ipad.svg";
 import Image from "next/image";
 import { H5, H6, P, P2 } from "../Shared/headings/Headings";
 
