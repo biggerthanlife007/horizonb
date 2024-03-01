@@ -18,14 +18,14 @@ const roboto = Roboto({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${inter.variable} ${roboto.variable} font-sans`}>
-      <Layout>
-        <div className="hidden lg:block">
-          <H5>Site is undergoing Maintainence Try on mobile devices</H5>
-        </div>
-        <div className="lg:hidden">
-          <Component {...pageProps} />
-        </div>
-      </Layout>
+      {/* <Layout> */}
+      <div className="hidden lg:block">
+        <H5>Site is undergoing Maintainence Try on mobile devices</H5>
+      </div>
+      <div className="lg:hidden">
+        <Component {...pageProps} />
+      </div>
+      {/* </Layout> */}
     </main>
   );
 }
