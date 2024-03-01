@@ -42,7 +42,7 @@ const Transfer = () => {
           src={mountain}
           alt=""
           priority
-          className="absolute h-[180vh] w-full object-cover -z-10"
+          className="absolute h-[100%] w-full object-cover -z-10"
         />
         <div className="w-[90%] mx-auto z-50 mb-24">
           <div className=" flex flex-col gap-10 mt-4">

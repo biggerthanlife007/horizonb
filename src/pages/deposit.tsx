@@ -33,7 +33,7 @@ const Deposit = () => {
           src={mountain}
           alt=""
           priority
-          className="absolute h-[100vh] w-full object-cover -z-10"
+          className="absolute h-[100%] w-full object-cover -z-10"
         />
         <div className="w-[90%] mx-5 z-50 mb-40">
           <div className="flex flex-col gap-10 mt-4">

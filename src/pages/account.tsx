@@ -35,19 +35,18 @@ const Home = () => {
         <div className="bg-cover bg-center">
           <SideNav cart={false} />
         </div>
-        <div className="relative   lg:hidden">
+        <div className="relative  lg:hidden">
           <Image
             src={mountain}
             alt={""}
             priority
-            className="absolute h-[200vh] w-full object-cover -z-10"
+            className="absolute h-[100%] w-full object-cover -z-10"
           />
           <div className="w-5/6 mx-10 z-50 my-3">
             <div className="flex flex-row justify-between pt-4 ">
               <H6>
                 Welcome Back <br /> James
               </H6>
-
               <Image
                 src={James}
                 alt={""}
