@@ -35,7 +35,7 @@ const Deposit = () => {
           priority
           className="absolute h-[100vh] w-full object-cover -z-10"
         />
-        <div className="w-5/6 mx-10 z-50 mb-40">
+        <div className="w-[90%] mx-5 z-50 mb-40">
           <div className="flex flex-col gap-10 mt-4">
             <div className="flex flex-col gap-2 items-center bg-[white] w-full h-[100vh] ">
               <div className="flex flex-col w-full items-center  gap-3 my-10">

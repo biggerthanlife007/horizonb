@@ -139,6 +139,13 @@ const Home = () => {
 
                     <hr />
                     <H6>Posted</H6>
+                    <TransactionItem
+                      date="February 27, 2024"
+                      company="Feeding America"
+                      description="Donation"
+                      amount={"3,500.00"}
+                      transactionType="debit"
+                    />
 
                     <TransactionItem
                       date="February 26, 2024"
@@ -161,17 +168,17 @@ const Home = () => {
                       amount={300.23}
                       transactionType="debit"
                     />
-                    <TransactionItem
+                    {/* <TransactionItem
                       date="February 23, 2024"
                       company="Binance"
                       description="Crypto"
-                      amount={2100.12}
+                      amount={"2,100.12"}
                       transactionType="credit"
-                    />
+                    /> */}
 
                     <TransactionItem
                       date="February 22, 2024"
-                      company="Liberty Meadows Veterinary"
+                      company="Hiilside Vetinary Clinic"
                       description="Professional service"
                       amount={200.23}
                       transactionType="debit"
