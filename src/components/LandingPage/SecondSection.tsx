@@ -14,6 +14,7 @@ const SecondSection = () => {
             src={Car}
             alt={""}
             className="w-[60px] h-[80px] md:w-[136px] md:h-[136px]"
+            priority
           />
           <div>
             <H6>Easier car buying</H6>
@@ -29,6 +30,7 @@ const SecondSection = () => {
             src={Ipad}
             alt={""}
             className="w-[60px] h-[80px] md:w-[136px] md:h-[136px]"
+            priority
           />
           <div>
             <H6>No impact, no worries</H6>
@@ -46,6 +48,7 @@ const SecondSection = () => {
             src={Flower}
             alt={""}
             className="w-[60px] h-[80px] md:w-[136px] md:h-[136px]"
+            priority
           />
           <div>
             <H6>Savings starts here</H6>

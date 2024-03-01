@@ -11,6 +11,7 @@ const FirstSection = () => {
         <Image
           src={Hero}
           alt={""}
+          priority
           className="w-full h-[300px] object-cover md:h-full lg:h-[450px]"
         />
         <div className="flex flex-col items-center justify-center bg-[#3bb53d]  absolute top-[250px] h-[250px] md:w-[320px] md:right-8  md:top-[100px] md:h-[350px] lg:right-44 lg:top-[80px] ">

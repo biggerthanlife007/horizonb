@@ -16,6 +16,7 @@ const Section: React.FC<SectionProps> = ({ image, title, description }) => {
           src={image}
           alt=""
           className="min-w-[208px] object-cover h-[300px] lg:w-[384px] lg:h-[384px]"
+          priority
         />
         <div className="flex flex-col gap-2 mt-2 mx-3">
           <H6 className="font-medium text-[gray]">{title}</H6>

@@ -1,7 +1,5 @@
 import React from "react";
-import { P } from "../Shared/headings/Headings";
 import BillPayCard from "./BillpayCard";
-import Reminder from "./Reminder";
 
 const HistoryBillPay = () => {
   return (

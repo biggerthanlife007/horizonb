@@ -48,14 +48,14 @@ const Login: React.FC = () => {
   return (
     <div className="w-full">
       <Link href="/" className="flex flex-row items-center justify-start gap-2">
-        <Image src={Logo} alt={""} className="w-5 h-5" />
+        <Image priority src={Logo} alt={""} className="w-5 h-5" />
         <H4 className="text-[#3bb53d] whitespace-nowrap">Horizon Bank</H4>
       </Link>
       <div className="bg-[#eee] mt-2 h-[100vh]">
         <div className="flex flex-col items-center justify-center z-50">
           <div className="bg-white w-5/6 border border-[gray] rounded-[10px] px-10 md:w-2/3 lg:w-1/3 py-8 mt-20">
             <div className="flex flex-row items-center justify-center">
-              <Image src={Logo} alt={""} className="w-5 h-5" />
+              <Image priority src={Logo} alt={""} className="w-5 h-5" />
               <H4 className="text-[#3bb53d] whitespace-nowrap">Horizon Bank</H4>
             </div>
             <Formik
