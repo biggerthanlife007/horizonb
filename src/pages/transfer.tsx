@@ -70,7 +70,7 @@ const Transfer = () => {
                 <div>
                   <H6 className="my-2 ml-6">Your transfer details </H6>
                   <P2 className="my-3 ml-6">
-                    All fields are required unless we&aspos;ve marked them
+                    All fields are required unless we&apos;ve marked them
                     (optional)
                   </P2>
                   <div className="flex justify-center gap-4 my-4">

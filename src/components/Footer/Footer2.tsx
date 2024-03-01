@@ -5,8 +5,8 @@ import { TfiHome } from "react-icons/tfi";
 const Footer2 = () => {
   return (
     <div>
-      <div className="flex flex-row gap-10 justify-center my-8">
-        <P2>© 2024 Horizon Bank</P2>
+      <div className="flex flex-row gap-6 items-center justify-center my-8">
+        <P2 className="">© 2024 Horizon Bank</P2>
 
         <div className="text-center">
           <H6>MEMBER</H6>

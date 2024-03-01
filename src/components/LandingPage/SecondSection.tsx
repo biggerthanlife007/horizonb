@@ -39,7 +39,7 @@ const SecondSection = () => {
               to your credit score.
             </P>
             <P className="text-[#3bb53d] mt-2">
-              See if I`&apos;m pre-approved {">"}
+              See if I&apos;m pre-approved {">"}
             </P>
           </div>
         </div>

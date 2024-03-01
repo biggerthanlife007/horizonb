@@ -127,17 +127,17 @@ const Home = () => {
                         amount={80.96}
                         transactionType="pending"
                       />
-                      <TransactionItem
-                        date="February 28, 2024"
-                        company="Walmart"
-                        description=""
-                        amount={948.6}
-                        transactionType="pending"
-                      />
                     </div>
 
                     <hr />
                     <H6>Posted</H6>
+                    <TransactionItem
+                      date="February 28, 2024"
+                      company="Walmart"
+                      description=""
+                      amount={"948.60"}
+                      transactionType="debit"
+                    />
                     <TransactionItem
                       date="February 27, 2024"
                       company="Feeding America"
@@ -177,7 +177,7 @@ const Home = () => {
 
                     <TransactionItem
                       date="February 22, 2024"
-                      company="Hiilside Vetinary Clinic"
+                      company="Hillside Vetinary Clinic"
                       description="Professional service"
                       amount={200.23}
                       transactionType="debit"

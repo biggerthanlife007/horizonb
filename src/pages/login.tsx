@@ -1,5 +1,7 @@
 import Image from "next/image";
-import Logo from "@/assets/images/logo.jpg";
+import mountain from "@/assets/images/mountain.jpg";
+// import Logo from "@/assets/images/logo.jpg";
+import Logo from "@/components/Navbar/Logo";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { H4, P, P2 } from "@/components/Shared/headings/Headings";
@@ -46,17 +48,21 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="w-full">
-      <Link href="/" className="flex flex-row items-center justify-start gap-2">
-        <Image priority src={Logo} alt={""} className="w-5 h-5" />
-        <H4 className="text-[#3bb53d] whitespace-nowrap">Horizon Bank</H4>
-      </Link>
-      <div className="bg-[#eee] mt-2 h-[100vh]">
+    <div className="w-full h-[80vh]">
+      <Logo />
+      <div className="bg-cover bg-center">{/* <SideNav cart={false} /> */}</div>
+      <div className="relative lg:hidden">
+        <Image
+          src={mountain}
+          alt=""
+          priority
+          className="absolute h-[100vh] w-full object-cover -z-10"
+        />
+
         <div className="flex flex-col items-center justify-center z-50">
           <div className="bg-white w-5/6 border border-[gray] rounded-[10px] px-10 md:w-2/3 lg:w-1/3 py-8 mt-20">
             <div className="flex flex-row items-center justify-center">
-              <Image priority src={Logo} alt={""} className="w-5 h-5" />
-              <H4 className="text-[#3bb53d] whitespace-nowrap">Horizon Bank</H4>
+              <Logo />
             </div>
             <Formik
               initialValues={initialValues}
@@ -104,19 +110,20 @@ const Login: React.FC = () => {
             </Formik>
           </div>
 
-          <div className="flex flex-col text-[gray] items-center justify-center gap-4 mt-4 md:flex-row md:items-end md:justify-around md:mt-28">
-            <Link href="">Contact us</Link>
+          <div className="flex flex-col bg-[#eee] h-auto w-5/6 text-[gray] items-center justify-center gap-4 mt-4 md:flex-row md:items-end md:justify-around md:mt-28">
+            {/* <Link href="">Contact us</Link>
             <Link href="">Terms & Conditions</Link>
             <Link href="">Privacy Pledge</Link>
             <Link href="">Security</Link>
             <Link href="">Accessible Banking</Link>
-            <Link href="">Leave Feedback</Link>
-          </div>
-          <div>
-            <Footer2 />
+            <Link href="">Leave Feedback</Link> */}
+            <div>
+              <Footer2 />
+            </div>
           </div>
         </div>
       </div>
+      {/* </div> */}
       {isModalOpen && (
         <Modal
           openModal={isModalOpen}
