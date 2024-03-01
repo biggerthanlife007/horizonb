@@ -49,8 +49,7 @@ const InternalTransfer = () => {
           </div>
 
           <div>
-            <Input label={"Amount"} name={""} placeholder={"$"} />
-            <p>Format- $0.00</p>
+            <Input label={"Amount"} name={""} placeholder={"$0.00"} />
           </div>
         </div>
 
