@@ -50,7 +50,7 @@ const Deposit = () => {
         />
         <div className="w-[90%] mx-5 z-50">
           <div className="flex flex-col gap-4 mt-4">
-            <div className="flex flex-col  items-center bg-[white] w-full h-[100vh] ">
+            <div className="flex flex-col  items-center bg-[white] w-full h-[100%] ">
               {/* <div onClick={() => window.history.back()}>
                 <IoArrowBack />
               </div> */}
@@ -100,7 +100,7 @@ const Deposit = () => {
                       View Full Report
                     </Button>
                   </div>
-                  <div className="flex flex-row items-center justify-center shadow-lg gap-4 w-[85%] border h-[200px] rounded-[8px] border-gray-100 mt-8">
+                  <div className="flex flex-row items-center justify-center shadow-lg gap-4 w-[85%] border h-[200px] rounded-[8px] border-gray-100 mt-8 mb-52">
                     <div className="flex flex-col gap-2">
                       {" "}
                       <div className="bg-[#d7d5d5]">
@@ -118,7 +118,7 @@ const Deposit = () => {
                     </div>
                   </div>
                   <Link
-                    className="fixed bottom-[12%] right-[10%] flex flex-row items-center text-2xl whitespace-nowrap justify-center w-[50%] text-[white] h-16 mt-2 rounded-[8px] bg-[#AC150F]"
+                    className="fixed bottom-[20%] right-[10%] flex flex-row items-center text-2xl whitespace-nowrap justify-center w-[50%] text-[white] h-16 mt-2 rounded-[8px] bg-[#AC150F]"
                     href="/chat"
                   >
                     <IoChatbubbleEllipsesOutline />
