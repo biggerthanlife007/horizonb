@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { H6 } from "../Shared/headings/Headings";
+import { H6, P } from "../Shared/headings/Headings";
 import Button from "../Shared/button/Button";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import { useRouter } from "next/router";
@@ -41,7 +41,7 @@ const Processing: React.FC<ProcessingProps> = ({}) => {
           <IoCheckmarkCircle />
         </div>
         <H6 className="w-2/3 text-center">Your Request is being scheduled</H6>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col justify-center gap-4 mx-4">
           <H6>From : Primary Checkings - 1669</H6>
           <H6>To : {externalUserData?.BankName}</H6>
           <H6>Name : {externalUserData?.FullName}</H6>
@@ -52,6 +52,11 @@ const Processing: React.FC<ProcessingProps> = ({}) => {
 
           {/* Display present date */}
           <H6>Date: {getPresentDate()}</H6>
+
+          <P className="text-[gray]">
+            Apologies your deposit will take 3-5 business days to complete due
+            to bank maintenance
+          </P>
         </div>
 
         <Button color="secondary" onClick={handleHome} className="w-1/2 mt-4">

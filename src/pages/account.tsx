@@ -138,7 +138,7 @@ const Home = () => {
                         <TransactionItem
                           date={getPresentDate()}
                           company={externalUserData.BankName}
-                          description="External Transfer"
+                          description="Direct Deposit"
                           amount={externalUserData.Amount || ""}
                           transactionType="pending"
                         />
@@ -147,7 +147,7 @@ const Home = () => {
                       <TransactionItem
                         date="March 1, 2024"
                         company="Bank of America"
-                        description="External Transfer"
+                        description="Direct Deposit"
                         amount={500.23}
                         transactionType="pending"
                       />
@@ -203,7 +203,7 @@ const Home = () => {
                     <TransactionItem
                       date="February 26, 2024"
                       company="Bank of the west"
-                      description="External transfer"
+                      description="Direct Deposit"
                       amount={300.23}
                       transactionType="debit"
                     />
@@ -232,7 +232,7 @@ const Home = () => {
                     <TransactionItem
                       date="February 20, 2024"
                       company="Truist Bank"
-                      description="External Transfer"
+                      description="Direct Deposit"
                       amount={895.23}
                       transactionType="debit"
                     />

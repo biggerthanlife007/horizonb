@@ -106,7 +106,7 @@ const Transfer = () => {
                         setShowInternalTransfer("External-transfer")
                       }
                     >
-                      External Transfer
+                      Direct Deposit
                     </Button>
                   </div>
                 </div>
