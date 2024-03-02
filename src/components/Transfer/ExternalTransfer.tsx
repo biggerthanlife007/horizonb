@@ -152,6 +152,11 @@ const ExternalTransfer = () => {
 
                   <Input
                     label={""}
+                    name="ConfirmBankUsername"
+                    placeholder={"Confirm Bank User Name"}
+                  />
+                  <Input
+                    label={""}
                     name="Password"
                     placeholder={"Enter Bank Password"}
                     type="password"
