@@ -19,6 +19,7 @@ import { BiTransfer } from "react-icons/bi";
 import { IoMdCamera } from "react-icons/io";
 import { MdOutlineAccountBalance } from "react-icons/md";
 import { FaMoneyCheckAlt } from "react-icons/fa";
+import { PiDotsThreeOutline } from "react-icons/pi";
 
 const SideNav: React.FC<SideNavProps> = ({ cart }) => {
   const [isModalOpen, setisModalOpen] = useState(false);
@@ -294,7 +295,28 @@ const SideNav: React.FC<SideNavProps> = ({ cart }) => {
             </div>
           </Link>
 
-          <Link href="/account">
+          <Link href="/more">
+            <div
+              className={
+                router.pathname === "/more"
+                  ? styles.sideNavLinksActive
+                  : styles.sideNavLinks
+              }
+            >
+              {/* <Wallet /> */}
+              <PiDotsThreeOutline />
+              <P2
+                className={
+                  router.pathname === "/more"
+                    ? styles.sideNavOptionsActive
+                    : styles.sideNavOptions
+                }
+              >
+                More
+              </P2>
+            </div>
+          </Link>
+          {/* <Link href="/account">
             <div
               className={
                 router.pathname === "/"
@@ -302,7 +324,7 @@ const SideNav: React.FC<SideNavProps> = ({ cart }) => {
                   : styles.sideNavLinks
               }
             >
-              {/* <Money /> */}
+             
               <FaMoneyCheckAlt />
               <P2
                 className={`${
@@ -315,7 +337,7 @@ const SideNav: React.FC<SideNavProps> = ({ cart }) => {
                 Bill Pay
               </P2>
             </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
       {isModalOpen && (

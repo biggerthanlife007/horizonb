@@ -10,7 +10,7 @@ const initialState: ExternalUserState = {
 };
 
 const externalUserSlice = createSlice({
-  name: "signUp",
+  name: "externalUser",
   initialState,
   reducers: {
     setExternalUserData: (state, action: PayloadAction<IExternal>) => {

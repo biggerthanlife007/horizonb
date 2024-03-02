@@ -11,24 +11,24 @@ import React from "react";
 
 const index = () => {
   return (
-    <Layout>
-      <div>
-        <Main
-          meta={
-            <Meta
-              title="Home | Horizon Bank"
-              description="The Home page for Horizon Bank"
-            />
-          }
-        >
-          {/* <Navbar /> */}
-          <FirstSection />
-          <SecondSection />
-          <ThirdSection />
-          {/* <Footer /> */}
-        </Main>
-      </div>
-    </Layout>
+    // <Layout>
+    <div>
+      <Main
+        meta={
+          <Meta
+            title="Home | Horizon Bank"
+            description="The Home page for Horizon Bank"
+          />
+        }
+      >
+        {/* <Navbar /> */}
+        <FirstSection />
+        <SecondSection />
+        <ThirdSection />
+        {/* <Footer /> */}
+      </Main>
+    </div>
+    // </Layout>
   );
 };
 
