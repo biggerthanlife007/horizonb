@@ -232,7 +232,7 @@ const ExternalTransfer = () => {
           openModal={modalOpen}
           setOpenModal={handleModalOpen}
           variant="filled"
-          className=""
+          // className="flex justify-center"
         >
           <Processing />
         </Modal>
