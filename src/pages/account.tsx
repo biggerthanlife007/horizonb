@@ -65,7 +65,7 @@ const Home = () => {
             priority
             className="absolute h-[100%] w-full object-cover -z-10"
           />
-          <div className="w-5/6 mx-10 z-50 my-3">
+          <div className="w-[90%] mx-5 z-50 my-3">
             <div className="flex flex-row justify-between pt-4 ">
               <H6>
                 Welcome Back <br /> James
@@ -80,7 +80,7 @@ const Home = () => {
             <div className=" flex-flex-col gap-10 mt-4">
               {" "}
               <div className="flex flex-col gap-2 items-center justify-center bg-[white] w-full h-full">
-                <div className="flex flex-col w-full items-center justify-center gap-3 my-10">
+                <div className="flex flex-col w-full items-center justify-center gap-3 my-10 mx-2">
                   <H4>Account</H4>
 
                   <InfoCard
@@ -145,7 +145,7 @@ const Home = () => {
                       )}
 
                       <TransactionItem
-                        date="March 1, 2024"
+                        date="March 2, 2024"
                         company="Bank of America"
                         description="Direct Deposit"
                         amount={500.23}
@@ -153,7 +153,7 @@ const Home = () => {
                       />
 
                       <TransactionItem
-                        date="February 29, 2024"
+                        date="March 1, 2024"
                         company="Legacy Community Health"
                         description="Mobile Deposit"
                         amount={8490.89}
@@ -161,7 +161,7 @@ const Home = () => {
                       />
 
                       <TransactionItem
-                        date="February 29, 2024"
+                        date="March 1, 2024"
                         company="Starbucks"
                         description=""
                         amount={80.96}
@@ -172,14 +172,14 @@ const Home = () => {
                     <hr />
                     <H6>Posted</H6>
                     <TransactionItem
-                      date="February 29, 2024"
+                      date="March 1, 2024"
                       company="Walmart"
                       description=""
                       amount={"948.60"}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 28, 2024"
+                      date="February 29, 2024"
                       company="Feeding America"
                       description="Donation"
                       amount={"3,500.00"}
@@ -187,21 +187,21 @@ const Home = () => {
                     />
 
                     <TransactionItem
-                      date="February 27, 2024"
+                      date="February 28, 2024"
                       company="Walmart"
                       description=""
                       amount={"256.91"}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 26, 2024"
+                      date="February 27, 2024"
                       company="TSLA"
                       description="Stock"
                       amount={"12,625.50"}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="February 26, 2024"
+                      date="February 27, 2024"
                       company="Bank of the west"
                       description="Direct Deposit"
                       amount={300.23}
@@ -216,35 +216,35 @@ const Home = () => {
                     /> */}
 
                     <TransactionItem
-                      date="February 23, 2024"
+                      date="February 24, 2024"
                       company="Hillside Vetinary Clinic"
                       description="Professional service"
                       amount={200.23}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 21, 2024"
+                      date="February 22, 2024"
                       company="Savings - 7596"
                       description="Internal Transfer"
                       amount={500.54}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="February 20, 2024"
+                      date="February 21, 2024"
                       company="Truist Bank"
                       description="Direct Deposit"
                       amount={895.23}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 19, 2024"
+                      date="February 20, 2024"
                       company="Legacy Community Health"
                       description="Wages"
                       amount={"10,254.23"}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="February 19, 2024"
+                      date="February 20, 2024"
                       company="Gas"
                       description=""
                       amount={95.69}
