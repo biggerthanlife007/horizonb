@@ -13,7 +13,7 @@ import Maintenance from "@/components/Modals/Maintenace";
 import { IoPersonOutline } from "react-icons/io5";
 import Logout from "@/components/Navbar/Logout";
 import { useSelector } from "react-redux";
-import { RootState } from "@/components/store/store";
+import { RootState } from "@/store/store";
 
 const Home = () => {
   const externalUserData = useSelector(
