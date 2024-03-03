@@ -90,13 +90,13 @@ const Home = () => {
                     amount={`$${checkingBalance.toFixed(2)}`}
                     availableText="Available Balance"
                   />
-                  <InfoCard
+                  {/* <InfoCard
                     color="red"
                     title="Primary Checkings -"
                     number="1669"
                     amount="$15,322.45"
                     availableText="Available Balance"
-                  />
+                  /> */}
                   <InfoCard
                     color="purple"
                     title="Simple Checking -"
