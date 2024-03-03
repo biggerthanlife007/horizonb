@@ -101,15 +101,16 @@ const Deposit = () => {
                     </Button>
                   </div>
                   <div className="flex flex-row items-center justify-center shadow-lg gap-4 w-[85%] border h-[200px] rounded-[8px] border-gray-100 mt-8 mb-52">
-                    <div className="flex flex-col gap-2">
-                      {" "}
-                      <div className="bg-[#d7d5d5]">
-                        <p className="flex flex-row gap-1 items-center text-[#02BF6F] text-lg">
+                    <div className="flex flex-col gap-2 ">
+                      <div className="bg-[#d7d5d5] mx-2">
+                        <p className="flex flex-row gap-1 items-center text-[#02BF6F] text-sm ">
                           <FaRegStar /> Recommended for you
                         </p>
                       </div>
-                      <H6>$1500 Interest savings / 36 Months</H6>
-                      <P2 className="text-[gray]">
+                      <H6 className="mx-2">
+                        $1500 Interest savings / 36 Months
+                      </H6>
+                      <P2 className="text-[gray] mx-2">
                         Save on your existing car loans
                       </P2>
                     </div>
@@ -118,7 +119,7 @@ const Deposit = () => {
                     </div>
                   </div>
                   <Link
-                    className="fixed bottom-[20%] right-[10%] flex flex-row items-center text-2xl whitespace-nowrap justify-center w-[50%] text-[white] h-16 mt-2 rounded-[8px] bg-[#AC150F]"
+                    className="fixed bottom-[20%] right-[10%] flex flex-row items-center text-xl gap-1 whitespace-nowrap justify-center w-[50%] text-[white] h-12 mt-2 rounded-[8px] bg-[#AC150F]"
                     href="/chat"
                   >
                     <IoChatbubbleEllipsesOutline />

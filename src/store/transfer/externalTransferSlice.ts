@@ -1,5 +1,5 @@
+import { IExternal } from "@/Services/transfer/Payload";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IExternal } from "@/components/Services/transfer/Payload";
 
 interface ExternalUserState {
   externalUser: IExternal | null;

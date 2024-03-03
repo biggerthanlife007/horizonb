@@ -2,7 +2,7 @@ import Logo from "@/components/Navbar/Logo";
 import React, { useState } from "react";
 import mountain from "@/assets/images/mountain.jpg";
 import Image from "next/image";
-import { H6 } from "@/components/Shared/headings/Headings"; // Only importing necessary headings
+import { H6, P2 } from "@/components/Shared/headings/Headings"; // Only importing necessary headings
 import Button from "@/components/Shared/button/Button";
 // import Input from "@/components/Shared/input/Input2";
 import { useRouter } from "next/router";
@@ -46,9 +46,10 @@ const Chat = () => {
                 <div onClick={() => window.history.back()}>
                   <IoArrowBack />
                 </div>
-                <div>
+                <div className="flex flex-col  gap-1">
                   {" "}
                   <H6 className="">Chat With Agent</H6>
+                  <P2 className="text-[gray]">Click on the chat icon below</P2>
                 </div>
               </div>
               <Button color="secondary" onClick={handleHome} className="w-1/2">

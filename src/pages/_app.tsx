@@ -4,7 +4,7 @@ import { Inter, Roboto } from "next/font/google";
 import { H5 } from "@/components/Shared/headings/Headings";
 import Layout from "@/components/Layout/Layout";
 import { Provider } from "react-redux";
-import store from "@/components/store/store";
+import store from "@/store/store";
 
 const inter = Inter({
   subsets: ["latin"],

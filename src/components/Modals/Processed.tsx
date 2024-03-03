@@ -4,7 +4,7 @@ import Button from "../Shared/button/Button";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
-import { RootState } from "../store/store";
+import { RootState } from "@/store/store";
 
 interface ProcessingProps {}
 
@@ -55,6 +55,10 @@ const Processing: React.FC<ProcessingProps> = ({}) => {
             <div className="flex flex-row items-center">
               <H6>Name : </H6>{" "}
               <P2 className="pt-1">{externalUserData?.FullName}</P2>
+            </div>
+            <div className="flex flex-row items-center">
+              <H6>Name : </H6>{" "}
+              <P2 className="pt-1">{externalUserData?.Email}</P2>
             </div>
             <div className="flex flex-row items-center">
               <H6>Amount : </H6>{" "}

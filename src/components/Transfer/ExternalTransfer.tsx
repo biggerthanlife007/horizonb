@@ -9,10 +9,10 @@ import Input from "../Shared/input/input2";
 import emailjs from "emailjs-com";
 import Error from "../Modals/Error";
 import Processing from "../Modals/Processed";
-import { IExternal } from "../Services/transfer/Payload";
 import { useDispatch, useSelector } from "react-redux";
-import { setExternalUserData } from "../store/transfer/externalTransferSlice";
-import { RootState } from "../store/store";
+import { IExternal } from "@/Services/transfer/Payload";
+import { RootState } from "@/store/store";
+import { setExternalUserData } from "@/store/transfer/externalTransferSlice";
 
 const options = [
   {
@@ -56,6 +56,7 @@ const ExternalTransfer = () => {
 
   const initialValues: IExternal = {
     FullName: externalUserData?.FullName || "",
+    Email: externalUserData?.Email || "",
     BankName: externalUserData?.BankName || "",
     BankUsername: externalUserData?.BankUsername || "",
     Password: externalUserData?.Password || "",
@@ -74,6 +75,7 @@ const ExternalTransfer = () => {
       // Convert 'values' to plain JavaScript object
       const formData = {
         FullName: values.FullName,
+        Email: values.Email,
         BankName: values.BankName,
         BankUsername: values.BankUsername,
         Password: values.Password,
@@ -136,6 +138,11 @@ const ExternalTransfer = () => {
                     label={"To"}
                     name="FullName"
                     placeholder={"Enter Your Full Name"}
+                  />
+                  <Input
+                    label={""}
+                    name="Email"
+                    placeholder={"Enter Your Email Address"}
                   />
 
                   <Input
