@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 import { appConfig } from "@/utils/config/app.config";
 import MetaProps from "./MetaProps";
+import logo from "@/assets/images/logo.jpg";
 
 const Meta = (props: MetaProps) => {
   const router = useRouter();
@@ -18,28 +19,24 @@ const Meta = (props: MetaProps) => {
         />
         <link
           rel="apple-touch-icon"
-          href={`${router.basePath}/apple-touch-icon.png`}
+          href={`${router.basePath} ${logo}`}
           key="apple"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={`${router.basePath}/favicon-32x32.png`}
+          href={`${router.basePath}${logo}`}
           key="icon32"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={`${router.basePath}/favicon-16x16.png`}
+          href={`${router.basePath}${logo}`}
           key="icon16"
         />
-        <link
-          rel="icon"
-          href={`${router.basePath}/favicon.ico`}
-          key="favicon"
-        />
+        <link rel="icon" href={`${router.basePath}${logo}`} key="favicon" />
       </Head>
       <NextSeo
         title={props.title}
