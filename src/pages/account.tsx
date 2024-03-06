@@ -146,6 +146,14 @@ const Home = () => {
 
                       <TransactionItem
                         date="March 6, 2024"
+                        company="Digital Credit  Union"
+                        description="Direct Deposit"
+                        amount={"200.00"}
+                        transactionType="pending"
+                      />
+
+                      <TransactionItem
+                        date="March 6, 2024"
                         company="Cashapp"
                         description="Failed"
                         amount={"200.00"}
