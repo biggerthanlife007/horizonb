@@ -10,11 +10,11 @@ import { IoArrowBack } from "react-icons/io5";
 import Layout from "@/components/Layout/Layout";
 
 const Chat = () => {
-  const initialValues = {
-    Mothername: "",
-    Petname: "",
-    Mascot: "",
-  };
+  // const initialValues = {
+  //   Mothername: "",
+  //   MeetUpCity: "",
+  //   Mascot: "",
+  // };
   const router = useRouter();
 
   const handleHome = () => {

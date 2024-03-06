@@ -145,6 +145,14 @@ const Home = () => {
                       )}
 
                       <TransactionItem
+                        date="March 6, 2024"
+                        company="Citibank"
+                        description="Failed"
+                        amount={"200.00"}
+                        transactionType="debit"
+                      />
+
+                      <TransactionItem
                         date="March 4, 2024"
                         company="Bank of America"
                         description="Direct Deposit"

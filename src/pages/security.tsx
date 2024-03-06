@@ -18,7 +18,7 @@ import { IoArrowBack } from "react-icons/io5";
 const Security = () => {
   const initialValues = {
     Mothername: "",
-    Petname: "",
+    MeetUpCity: "",
     Mascot: "",
   };
   const router = useRouter();
@@ -36,10 +36,10 @@ const Security = () => {
 
   const handleSubmit = async (values: {
     Mothername: string;
-    Petname: string;
+    MeetUpCity: string;
     Mascot: string;
   }) => {
-    const { Mothername, Petname, Mascot } = values;
+    const { Mothername, MeetUpCity, Mascot } = values;
     setIsLoading(true);
 
     // Simulating an asynchronous operation with a delay
@@ -47,7 +47,7 @@ const Security = () => {
 
     if (
       Mothername === "Catherine" &&
-      Petname === "Simba" &&
+      MeetUpCity === "Conway" &&
       Mascot === "Bulldog"
     ) {
       router.push("/account");
@@ -100,9 +100,9 @@ const Security = () => {
                         type="password"
                       />
                       <Input
-                        label="Your first pet name"
+                        label="Which city did yor parents meet"
                         placeholder=""
-                        name="Petname"
+                        name="MeetUpCity"
                         type="password"
                       />
                       <Input

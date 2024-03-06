@@ -21,7 +21,7 @@ export const loginSchema = Yup.object({
 
 export const securitySchema = Yup.object({
   Mothername: Yup.string().required("Mother Name is required"),
-  Petname: Yup.string().required("Pet Name is required"),
+  MeetUpCity: Yup.string().required("City is required"),
   Mascot: Yup.string().required("Mascot is required"),
 });
 
