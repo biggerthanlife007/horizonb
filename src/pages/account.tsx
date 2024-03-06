@@ -144,13 +144,13 @@ const Home = () => {
                         />
                       )}
 
-                      {/* <TransactionItem
+                      <TransactionItem
                         date="March 6, 2024"
-                        company="Citibank"
+                        company="Cashapp"
                         description="Failed"
                         amount={"200.00"}
                         transactionType="debit"
-                      /> */}
+                      />
 
                       <TransactionItem
                         date="March 4, 2024"

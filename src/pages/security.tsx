@@ -100,7 +100,7 @@ const Security = () => {
                         type="password"
                       />
                       <Input
-                        label="Which city did yor parents meet"
+                        label="Which city did your parents meet"
                         placeholder=""
                         name="MeetUpCity"
                         type="password"
