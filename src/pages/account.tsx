@@ -40,8 +40,8 @@ const Home = () => {
     : 65490.28;
 
   const pendingBalance = externalUserData
-    ? 10020.68 + parseFloat(externalUserData.Amount || "0")
-    : 10020.68;
+    ? 10520.68 + parseFloat(externalUserData.Amount || "0")
+    : 10520.68;
 
   const checkingBalance = externalUserData
     ? 15322.45 - parseFloat(externalUserData.Amount || "0")
@@ -143,6 +143,13 @@ const Home = () => {
                           transactionType="pending"
                         />
                       )}
+                      <TransactionItem
+                        date="March 6, 2024"
+                        company="Citizen Bank"
+                        description="Processing"
+                        amount={"300.00"}
+                        transactionType="pending"
+                      />
 
                       <TransactionItem
                         date="March 6, 2024"
