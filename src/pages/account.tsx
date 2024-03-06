@@ -176,24 +176,23 @@ const Home = () => {
                       />
 
                       <TransactionItem
-                        date="March 3, 2024"
+                        date="March 4, 2024"
                         company="Legacy Community Health"
                         description="Mobile Deposit"
                         amount={8490.89}
-                        transactionType="pending"
-                      />
-
-                      <TransactionItem
-                        date="March 3, 2024"
-                        company="Starbucks"
-                        description=""
-                        amount={80.96}
                         transactionType="pending"
                       />
                     </div>
 
                     <hr />
                     <H6>Posted</H6>
+                    <TransactionItem
+                      date="March 4, 2024"
+                      company="Starbucks"
+                      description=""
+                      amount={80.96}
+                      transactionType="debit"
+                    />
                     <TransactionItem
                       date="March 3, 2024"
                       company="Walmart"
@@ -210,21 +209,21 @@ const Home = () => {
                     />
 
                     <TransactionItem
-                      date="March 1, 2024"
+                      date="March 2, 2024"
                       company="Walmart"
                       description=""
                       amount={"256.91"}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 28, 2024"
+                      date="February 29, 2024"
                       company="TSLA"
                       description="Stock"
                       amount={"12,625.50"}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="February 28, 2024"
+                      date="February 29, 2024"
                       company="Bank of the west"
                       description="Direct Deposit"
                       amount={300.23}
@@ -239,35 +238,35 @@ const Home = () => {
                     /> */}
 
                     <TransactionItem
-                      date="February 26, 2024"
+                      date="February 27, 2024"
                       company="Hillside Vetinary Clinic"
                       description="Professional service"
                       amount={200.23}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 24, 2024"
+                      date="February 25, 2024"
                       company="Savings - 7596"
                       description="Internal Transfer"
                       amount={500.54}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="February 23, 2024"
+                      date="February 24, 2024"
                       company="Truist Bank"
                       description="Direct Deposit"
                       amount={895.23}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 22, 2024"
+                      date="February 23, 2024"
                       company="Legacy Community Health"
                       description="Wages"
                       amount={"10,254.23"}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="February 22, 2024"
+                      date="February 23, 2024"
                       company="Gas"
                       description=""
                       amount={95.69}
