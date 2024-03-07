@@ -36,16 +36,16 @@ const Home = () => {
   };
 
   const totalBalance = externalUserData
-    ? 65490.28 - parseFloat(externalUserData.Amount || "0")
-    : 65490.28;
+    ? 72190.4 - parseFloat(externalUserData.Amount || "0")
+    : 72190.4;
 
   const pendingBalance = externalUserData
-    ? 10520.68 + parseFloat(externalUserData.Amount || "0")
-    : 10520.68;
+    ? 9491.06 + parseFloat(externalUserData.Amount || "0")
+    : 9491.06;
 
   const checkingBalance = externalUserData
-    ? 15322.45 - parseFloat(externalUserData.Amount || "0")
-    : 15322.45;
+    ? 22022.57 - parseFloat(externalUserData.Amount || "0")
+    : 22022.57;
 
   return (
     <>
@@ -174,9 +174,8 @@ const Home = () => {
                         amount={500.23}
                         transactionType="pending"
                       />
-
                       <TransactionItem
-                        date="March 4, 2024"
+                        date="March 5, 2024"
                         company="Legacy Community Health"
                         description="Mobile Deposit"
                         amount={8490.89}
@@ -186,6 +185,21 @@ const Home = () => {
 
                     <hr />
                     <H6>Posted</H6>
+                    <TransactionItem
+                      date="March 7, 2024"
+                      company="Bitcoin"
+                      description="Crypto"
+                      amount={"6,700.12"}
+                      transactionType="credit"
+                    />
+                    <TransactionItem
+                      date="March 6, 2024"
+                      company="Gas"
+                      description=""
+                      amount={95.69}
+                      transactionType="debit"
+                    />
+
                     <TransactionItem
                       date="March 4, 2024"
                       company="Starbucks"
@@ -229,21 +243,14 @@ const Home = () => {
                       amount={300.23}
                       transactionType="debit"
                     />
-                    {/* <TransactionItem
-                      date="February 23, 2024"
-                      company="Binance"
-                      description="Crypto"
-                      amount={"2,100.12"}
-                      transactionType="credit"
-                    /> */}
 
-                    <TransactionItem
+                    {/* <TransactionItem
                       date="February 27, 2024"
                       company="Hillside Vetinary Clinic"
                       description="Professional service"
                       amount={200.23}
                       transactionType="debit"
-                    />
+                    /> */}
                     <TransactionItem
                       date="February 25, 2024"
                       company="Savings - 7596"
@@ -264,13 +271,6 @@ const Home = () => {
                       description="Wages"
                       amount={"10,254.23"}
                       transactionType="credit"
-                    />
-                    <TransactionItem
-                      date="February 23, 2024"
-                      company="Gas"
-                      description=""
-                      amount={95.69}
-                      transactionType="debit"
                     />
 
                     <Button color="secondary" onClick={handleOpen}>
