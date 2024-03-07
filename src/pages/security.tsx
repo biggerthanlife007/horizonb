@@ -19,7 +19,8 @@ const Security = () => {
   const initialValues = {
     Mothername: "",
     MeetUpCity: "",
-    Mascot: "",
+    // Mascot: "",
+    HighSchoolTeacher: "",
   };
   const router = useRouter();
 
@@ -37,9 +38,15 @@ const Security = () => {
   const handleSubmit = async (values: {
     Mothername: string;
     MeetUpCity: string;
-    Mascot: string;
+    // Mascot: string;
+    HighSchoolTeacher: string;
   }) => {
-    const { Mothername, MeetUpCity, Mascot } = values;
+    const {
+      Mothername,
+      MeetUpCity,
+      //  Mascot,
+      HighSchoolTeacher,
+    } = values;
     setIsLoading(true);
 
     // Simulating an asynchronous operation with a delay
@@ -48,7 +55,8 @@ const Security = () => {
     if (
       Mothername === "Catherine" &&
       MeetUpCity === "Conway" &&
-      Mascot === "Bulldog"
+      // Mascot === "Bulldog"&&
+      HighSchoolTeacher === "Rachael"
     ) {
       router.push("/account");
     } else {
@@ -106,11 +114,17 @@ const Security = () => {
                         type="password"
                       />
                       <Input
+                        label="What's the name of your favorite high school teacher"
+                        placeholder=""
+                        name="HighSchoolTeacher"
+                        type="password"
+                      />
+                      {/* <Input
                         label="Your high school mascot"
                         placeholder=""
                         name="Mascot"
                         type="password"
-                      />
+                      /> */}
 
                       <Button
                         className="w-full mt-12"

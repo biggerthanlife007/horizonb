@@ -40,12 +40,12 @@ const Home = () => {
     : 72190.4;
 
   const pendingBalance = externalUserData
-    ? 9491.06 + parseFloat(externalUserData.Amount || "0")
-    : 9491.06;
+    ? 12839.58 + parseFloat(externalUserData.Amount || "0")
+    : 12839.58;
 
   const checkingBalance = externalUserData
-    ? 22022.57 - parseFloat(externalUserData.Amount || "0")
-    : 22022.57;
+    ? 14022.57 - parseFloat(externalUserData.Amount || "0")
+    : 14022.57;
 
   return (
     <>
@@ -108,7 +108,7 @@ const Home = () => {
                     color="purple"
                     title="Savings - "
                     number="7596"
-                    amount="$42,716.92"
+                    amount="$50,716.92"
                     availableText="Available Balance"
                   />
                   <InfoCard
@@ -144,10 +144,10 @@ const Home = () => {
                         />
                       )}
                       <TransactionItem
-                        date="March 6, 2024"
-                        company="Citizen Bank"
-                        description="Processing"
-                        amount={"300.00"}
+                        date="March 7, 2024"
+                        company="Citizens Bank"
+                        description="on hold"
+                        amount={"3648.46"}
                         transactionType="pending"
                       />
 
