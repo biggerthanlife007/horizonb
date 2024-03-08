@@ -143,19 +143,20 @@ const Home = () => {
                           transactionType="pending"
                         />
                       )}
+
+                      <TransactionItem
+                        date="March 6, 2024"
+                        company="Wells Fargo"
+                        description="Failed"
+                        amount={"200.00"}
+                        transactionType="debit"
+                      />
+
                       <TransactionItem
                         date="March 7, 2024"
                         company="Citizens Bank"
                         description="on hold"
                         amount={"3648.46"}
-                        transactionType="pending"
-                      />
-
-                      <TransactionItem
-                        date="March 6, 2024"
-                        company="Digital Credit  Union"
-                        description="Awaiting Authorization"
-                        amount={"200.00"}
                         transactionType="pending"
                       />
 
