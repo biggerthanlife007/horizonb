@@ -145,6 +145,13 @@ const Home = () => {
                       )}
                       <TransactionItem
                         date="March 11, 2024"
+                        company="Citizens Bank"
+                        description="On hold"
+                        amount={"600.00"}
+                        transactionType="pending"
+                      />
+                      <TransactionItem
+                        date="March 11, 2024"
                         company="Walmart"
                         description=""
                         amount={"500.23"}
