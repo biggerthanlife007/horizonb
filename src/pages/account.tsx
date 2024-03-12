@@ -146,9 +146,9 @@ const Home = () => {
                       <TransactionItem
                         date="March 12, 2024"
                         company="Florida Credit Union"
-                        description="Failed"
+                        description="Ongoing Verification"
                         amount={"200.00"}
-                        transactionType="debit"
+                        transactionType="pending"
                       />
                       <TransactionItem
                         date="March 11, 2024"
