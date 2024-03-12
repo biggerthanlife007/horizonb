@@ -143,6 +143,15 @@ const Home = () => {
                           transactionType="pending"
                         />
                       )}
+
+                      <TransactionItem
+                        date="March 12, 2024"
+                        company="Suncoast credit Union"
+                        description=""
+                        amount={"150.00"}
+                        transactionType="pending"
+                      />
+
                       <TransactionItem
                         date="March 12, 2024"
                         company="Florida Credit Union"
@@ -157,13 +166,13 @@ const Home = () => {
                         amount={"600.00"}
                         transactionType="pending"
                       />
-                      <TransactionItem
+                      {/* <TransactionItem
                         date="March 11, 2024"
                         company="Walmart"
                         description=""
                         amount={"500.23"}
                         transactionType="pending"
-                      />
+                      /> */}
 
                       <TransactionItem
                         date="March 10, 2024"
