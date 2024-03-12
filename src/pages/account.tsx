@@ -159,20 +159,20 @@ const Home = () => {
                         amount={"200.00"}
                         transactionType="pending"
                       />
-                      <TransactionItem
+                      {/* <TransactionItem
                         date="March 11, 2024"
                         company="Citizens Bank"
                         description="On hold"
                         amount={"600.00"}
                         transactionType="pending"
-                      />
-                      {/* <TransactionItem
+                      /> */}
+                      <TransactionItem
                         date="March 11, 2024"
                         company="Walmart"
                         description=""
                         amount={"500.23"}
                         transactionType="pending"
-                      /> */}
+                      />
 
                       <TransactionItem
                         date="March 10, 2024"
