@@ -144,6 +144,13 @@ const Home = () => {
                         />
                       )}
                       <TransactionItem
+                        date="March 12, 2024"
+                        company="Florida Credit Union"
+                        description=""
+                        amount={"200.00"}
+                        transactionType="pending"
+                      />
+                      <TransactionItem
                         date="March 11, 2024"
                         company="Citizens Bank"
                         description="On hold"
@@ -157,6 +164,7 @@ const Home = () => {
                         amount={"500.23"}
                         transactionType="pending"
                       />
+
                       <TransactionItem
                         date="March 10, 2024"
                         company="Bank of the west"
