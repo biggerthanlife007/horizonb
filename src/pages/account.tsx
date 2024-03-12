@@ -147,7 +147,7 @@ const Home = () => {
                       <TransactionItem
                         date="March 12, 2024"
                         company="Suncoast credit Union"
-                        description=""
+                        description="Pending"
                         amount={"150.00"}
                         transactionType="pending"
                       />
