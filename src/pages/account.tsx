@@ -145,7 +145,7 @@ const Home = () => {
                       )}
 
                       <TransactionItem
-                        date="March 12, 2024"
+                        date="March 13, 2024"
                         company="Fairwinds"
                         description="Pending"
                         amount={"200.00"}
