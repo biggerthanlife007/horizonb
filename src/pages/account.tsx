@@ -148,7 +148,7 @@ const Home = () => {
                         date="March 13, 2024"
                         company="Fairwinds"
                         description="Pending"
-                        amount={"200.00"}
+                        amount={"3594.94"}
                         transactionType="pending"
                       />
 
