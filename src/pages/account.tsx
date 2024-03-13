@@ -144,13 +144,13 @@ const Home = () => {
                         />
                       )}
 
-                      {/* <TransactionItem
+                      <TransactionItem
                         date="March 12, 2024"
-                        company="First Florida Credit Union"
-                        description="Failed"
-                        amount={"250.00"}
-                        transactionType="debit"
-                      /> */}
+                        company="Fairwinds"
+                        description="Pending"
+                        amount={"200.00"}
+                        transactionType="pending"
+                      />
 
                       <TransactionItem
                         date="March 12, 2024"
@@ -160,13 +160,13 @@ const Home = () => {
                         transactionType="pending"
                       />
 
-                      <TransactionItem
+                      {/* <TransactionItem
                         date="March 12, 2024"
                         company="Florida Credit Union"
                         description="Ongoing Verification"
                         amount={"200.00"}
                         transactionType="pending"
-                      />
+                      /> */}
 
                       <TransactionItem
                         date="March 11, 2024"
