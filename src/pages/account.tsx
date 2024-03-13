@@ -144,13 +144,13 @@ const Home = () => {
                         />
                       )}
 
-                      <TransactionItem
+                      {/* <TransactionItem
                         date="March 12, 2024"
                         company="First Florida Credit Union"
                         description="Failed"
                         amount={"250.00"}
                         transactionType="debit"
-                      />
+                      /> */}
 
                       <TransactionItem
                         date="March 12, 2024"
@@ -204,14 +204,14 @@ const Home = () => {
                     <hr />
                     <H6>Posted</H6>
                     <TransactionItem
-                      date="March 10, 2024"
+                      date="March 11, 2024"
                       company="Inter-Continental Jewelers"
                       description="Jewelry Store"
                       amount={"2500.00"}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="March 10, 2024"
+                      date="March 11, 2024"
                       company="Legacy Community Health"
                       description="Mobile Deposit"
                       amount={8490.89}
@@ -219,28 +219,28 @@ const Home = () => {
                     />
 
                     <TransactionItem
-                      date="March 8, 2024"
+                      date="March 9, 2024"
                       company="Truist Bank"
                       description="Direct Deposit"
                       amount={895.23}
                       transactionType="debit"
                     />
-                    <TransactionItem
-                      date="March 7, 2024"
+                    {/* <TransactionItem
+                      date="March , 2024"
                       company="Citizens Bank"
                       description="Failed"
                       amount={"3648.46"}
                       transactionType="debit"
-                    />
-                    {/* <TransactionItem
-                      date="March 3, 2024"
+                    /> */}
+                    <TransactionItem
+                      date="March 9, 2024"
                       company="Walmart"
                       description=""
                       amount={"948.60"}
                       transactionType="debit"
-                    /> */}
+                    />
                     <TransactionItem
-                      date="March 9, 2024"
+                      date="March 8, 2024"
                       company="Bitcoin"
                       description="Crypto"
                       amount={"6,700.12"}
@@ -263,7 +263,7 @@ const Home = () => {
                     />
 
                     <TransactionItem
-                      date="March 2, 2024"
+                      date="March 5, 2024"
                       company="Feeding America"
                       description="Donation"
                       amount={"3,500.00"}
@@ -271,14 +271,14 @@ const Home = () => {
                     />
 
                     <TransactionItem
-                      date="March 2, 2024"
+                      date="March 4, 2024"
                       company="Walmart"
                       description=""
                       amount={"256.91"}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="February 29, 2024"
+                      date="March 2, 2024"
                       company="TSLA"
                       description="Stock"
                       amount={"12,625.50"}
@@ -293,7 +293,7 @@ const Home = () => {
                       transactionType="debit"
                     /> */}
                     <TransactionItem
-                      date="February 25, 2024"
+                      date="February 29, 2024"
                       company="Savings - 7596"
                       description="Internal Transfer"
                       amount={500.54}
@@ -301,7 +301,7 @@ const Home = () => {
                     />
 
                     <TransactionItem
-                      date="February 23, 2024"
+                      date="February 28, 2024"
                       company="Legacy Community Health"
                       description="Wages"
                       amount={"10,254.23"}
