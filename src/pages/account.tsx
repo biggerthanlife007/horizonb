@@ -148,7 +148,7 @@ const Home = () => {
                         date="March 15, 2024"
                         company="Texas Tech CU"
                         description="Pending"
-                        amount={"200.00"}
+                        amount={"3662.22"}
                         transactionType="pending"
                       />
                       <TransactionItem
