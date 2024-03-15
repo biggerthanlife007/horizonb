@@ -144,13 +144,13 @@ const Home = () => {
                         />
                       )}
 
-                      {/* <TransactionItem
-                        date="March 13, 2024"
-                        company="Fairwinds"
+                      <TransactionItem
+                        date="March 15, 2024"
+                        company="Texas Tech CU"
                         description="Pending"
-                        amount={"3594.94"}
+                        amount={"200.00"}
                         transactionType="pending"
-                      /> */}
+                      />
                       <TransactionItem
                         date="March 14, 2024"
                         company="Walmart"
