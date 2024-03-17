@@ -147,7 +147,7 @@ const Home = () => {
                         date="March 17, 2024"
                         company="Citizen Bank"
                         description="Direct Deposit"
-                        amount={"$200.00"}
+                        amount={"200.00"}
                         transactionType="pending"
                       />
                       <TransactionItem
