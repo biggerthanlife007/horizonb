@@ -36,16 +36,16 @@ const Home = () => {
   };
 
   const totalBalance = externalUserData
-    ? 72190.4 - parseFloat(externalUserData.Amount || "0")
-    : 72190.4;
+    ? 99285.59 - parseFloat(externalUserData.Amount || "0")
+    : 99285.59;
 
   const pendingBalance = externalUserData
-    ? 10201.21 + parseFloat(externalUserData.Amount || "0")
-    : 10201.21;
+    ? 7250.23 + parseFloat(externalUserData.Amount || "0")
+    : 7250.23;
 
   const checkingBalance = externalUserData
-    ? 14022.57 - parseFloat(externalUserData.Amount || "0")
-    : 14022.57;
+    ? 16022.57 - parseFloat(externalUserData.Amount || "0")
+    : 16022.57;
 
   return (
     <>
@@ -108,7 +108,7 @@ const Home = () => {
                     color="purple"
                     title="Savings - "
                     number="7596"
-                    amount="$50,716.92"
+                    amount="$70,812.92"
                     availableText="Available Balance"
                   />
                   <InfoCard
@@ -143,6 +143,13 @@ const Home = () => {
                           transactionType="pending"
                         />
                       )}
+                      {/* <TransactionItem
+                        date="March 17, 2024"
+                        company="Chase Bank"
+                        description="Processing"
+                        amount={"200.00"}
+                        transactionType="pending"
+                      /> */}
                       <TransactionItem
                         date="March 17, 2024"
                         company="Chase Bank"
@@ -166,14 +173,14 @@ const Home = () => {
                         transactionType="pending"
                       /> */}
                       <TransactionItem
-                        date="March 15, 2024"
+                        date="March 16, 2024"
                         company="Walmart"
                         description=""
                         amount={"500.23"}
                         transactionType="pending"
                       />
                       <TransactionItem
-                        date="March 14, 2024"
+                        date="March 15, 2024"
                         company="Savings - 7596"
                         description="Internal Transfer"
                         amount={"6200.00"}
@@ -181,7 +188,7 @@ const Home = () => {
                       />
 
                       <TransactionItem
-                        date="March 12, 2024"
+                        date="March 14, 2024"
                         company="Suncoast credit Union"
                         description="Pending"
                         amount={"150.00"}
@@ -196,14 +203,6 @@ const Home = () => {
                         transactionType="pending"
                       /> */}
 
-                      <TransactionItem
-                        date="March 11, 2024"
-                        company="Bank of the west"
-                        description="Mobile Deposit"
-                        amount={3500.98}
-                        transactionType="pending"
-                      />
-
                       {/* <TransactionItem
                         date="March 6, 2024"
                         company="Cashapp"
@@ -216,14 +215,22 @@ const Home = () => {
                     <hr />
                     <H6>Posted</H6>
                     <TransactionItem
-                      date="March 15, 2024"
+                      date="March 18, 2024"
+                      company="Bank of the west"
+                      description=""
+                      amount={"10,500.98"}
+                      transactionType="credit"
+                    />
+
+                    <TransactionItem
+                      date="March 17, 2024"
                       company="Inter-Continental Jewelers"
                       description="Jewelry Store"
                       amount={"2500.00"}
                       transactionType="debit"
                     />
                     <TransactionItem
-                      date="March 14, 2024"
+                      date="March 15, 2024"
                       company="Legacy Community Health"
                       description="Mobile Deposit"
                       amount={8490.89}
@@ -231,7 +238,7 @@ const Home = () => {
                     />
 
                     <TransactionItem
-                      date="March 12, 2024"
+                      date="March 14, 2024"
                       company="Truist Bank"
                       description="Direct Deposit"
                       amount={895.23}
@@ -245,7 +252,7 @@ const Home = () => {
                       transactionType="debit"
                     /> */}
                     <TransactionItem
-                      date="March 11, 2024"
+                      date="March 13, 2024"
                       company="Walmart"
                       description=""
                       amount={"948.60"}
@@ -253,14 +260,14 @@ const Home = () => {
                     />
 
                     <TransactionItem
-                      date="March 10, 2024"
+                      date="March 12, 2024"
                       company="Bitcoin"
                       description="Crypto"
                       amount={"6,700.12"}
                       transactionType="credit"
                     />
                     <TransactionItem
-                      date="March 10, 2024"
+                      date="March 11, 2024"
                       company="Gas"
                       description=""
                       amount={95.69}
@@ -268,7 +275,7 @@ const Home = () => {
                     />
 
                     <TransactionItem
-                      date="March 9, 2024"
+                      date="March 10, 2024"
                       company="Walmart"
                       description=""
                       amount={350.96}

@@ -16,16 +16,16 @@ import { setExternalUserData } from "@/store/transfer/externalTransferSlice";
 
 const options = [
   {
-    value: "Primary Checking-1669 $14,022.57",
-    label: "Primary Checking-1669 $14,022.57",
+    value: "Primary Checking-1669 $16,022.57",
+    label: "Primary Checking-1669 $16,022.57",
   },
   {
     value: "Simple Checking-3263 $7,450.91",
     label: "Simple Checking-3263 $7,450.91",
   },
   {
-    value: "Savings -7596 $50,716.92",
-    label: "Savings -7596 $50,716.92",
+    value: "Savings -7596 $70,812.92",
+    label: "Savings -7596 $70,812.92",
   },
 ];
 
