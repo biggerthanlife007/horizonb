@@ -143,13 +143,13 @@ const Home = () => {
                           transactionType="pending"
                         />
                       )}
-                      {/* <TransactionItem
-                        date="March 17, 2024"
-                        company="Chase Bank"
+                      <TransactionItem
+                        date="March 19, 2024"
+                        company="Honors Credit Union"
                         description="Processing"
-                        amount={"200.00"}
+                        amount={"900.00"}
                         transactionType="pending"
-                      /> */}
+                      />
                       <TransactionItem
                         date="March 17, 2024"
                         company="Chase Bank"
