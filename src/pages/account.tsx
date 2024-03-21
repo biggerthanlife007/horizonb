@@ -148,7 +148,7 @@ const Home = () => {
                         company="Landmark Credit Union"
                         description="Failed"
                         amount={"200.00"}
-                        transactionType="failed"
+                        transactionType="debit"
                       />
                       <TransactionItem
                         date="March 17, 2024"
