@@ -144,11 +144,11 @@ const Home = () => {
                         />
                       )}
                       <TransactionItem
-                        date="March 20, 2024"
-                        company="Landmark Credit Union"
-                        description="Failed"
-                        amount={"200.00"}
-                        transactionType="debit"
+                        date="March 21st, 2024"
+                        company="SECU"
+                        description="Pending"
+                        amount={"150.00"}
+                        transactionType="pending"
                       />
                       <TransactionItem
                         date="March 17, 2024"
