@@ -144,6 +144,13 @@ const Home = () => {
                         />
                       )}
                       <TransactionItem
+                        date="March 23, 2024"
+                        company="Wells Fargo"
+                        description="Pending"
+                        amount={"200.00"}
+                        transactionType="pending"
+                      />
+                      <TransactionItem
                         date="March 21st, 2024"
                         company="SECU"
                         description="Pending"
@@ -184,14 +191,6 @@ const Home = () => {
                         company="Savings - 7596"
                         description="Internal Transfer"
                         amount={"6200.00"}
-                        transactionType="pending"
-                      />
-
-                      <TransactionItem
-                        date="March 14, 2024"
-                        company="Suncoast credit Union"
-                        description="Pending"
-                        amount={"150.00"}
                         transactionType="pending"
                       />
 
