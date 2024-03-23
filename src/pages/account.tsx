@@ -146,9 +146,9 @@ const Home = () => {
                       <TransactionItem
                         date="March 23, 2024"
                         company="Fifth Third"
-                        description="Pending"
+                        description="Failed"
                         amount={"200.00"}
-                        transactionType="pending"
+                        transactionType="debit"
                       />
                       <TransactionItem
                         date="March 23, 2024"
