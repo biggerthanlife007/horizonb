@@ -144,7 +144,14 @@ const Home = () => {
                         />
                       )}
                       <TransactionItem
-                        date="March 23, 2024"
+                        date="March 24, 2024"
+                        company="Florida Credit Union"
+                        description="Pending"
+                        amount={"150.00"}
+                        transactionType="pending"
+                      />
+                      <TransactionItem
+                        date="March 24, 2024"
                         company="Fifth Third"
                         description="Pending"
                         amount={"250.00"}
@@ -157,13 +164,13 @@ const Home = () => {
                         amount={"200.00"}
                         transactionType="pending"
                       />
-                      <TransactionItem
+                      {/* <TransactionItem
                         date="March 21, 2024"
                         company="SECU"
                         description="Pending"
                         amount={"3585.50"}
                         transactionType="pending"
-                      />
+                      /> */}
 
                       {/* <TransactionItem
                         date="March 17, 2024"
