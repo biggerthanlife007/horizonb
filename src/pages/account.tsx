@@ -222,6 +222,13 @@ const Home = () => {
                     <hr />
                     <H6>Posted</H6>
                     <TransactionItem
+                      date="March 24th, 2024"
+                      company="Legacy Community Health"
+                      description="Mobile Deposit"
+                      amount={9590.42}
+                      transactionType="credit"
+                    />
+                    <TransactionItem
                       date="March 22, 2024"
                       company="Chase Bank"
                       description="Direct Deposit"
