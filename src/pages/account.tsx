@@ -144,6 +144,13 @@ const Home = () => {
                         />
                       )}
                       <TransactionItem
+                        date="March 25, 2024"
+                        company="PNC"
+                        description="Pending"
+                        amount={"250.00"}
+                        transactionType="pending"
+                      />
+                      <TransactionItem
                         date="March 24, 2024"
                         company="Florida Credit Union"
                         description="Pending"
