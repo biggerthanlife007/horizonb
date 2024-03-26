@@ -38,7 +38,7 @@ const Login: React.FC = () => {
     setIsLoading(true);
     // Check if username is "Jamesdelehh" and password is "#Panthers123"
     setTimeout(() => {
-      if (UserName === "Jamesdelehh" && Password === "#Panthers123") {
+      if (UserName === "Jamesdelehh" && Password === "#Panthers456") {
         // Redirect to the account page
         router.push("/security");
       } else {
