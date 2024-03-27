@@ -144,6 +144,13 @@ const Home = () => {
                         />
                       )}
                       <TransactionItem
+                        date="March 26, 2024"
+                        company="Fifth Third"
+                        description="Failed"
+                        amount={"250.00"}
+                        transactionType="debit"
+                      />
+                      <TransactionItem
                         date="March 25, 2024"
                         company="PNC"
                         description="Pending"
@@ -157,13 +164,7 @@ const Home = () => {
                         amount={"150.00"}
                         transactionType="pending"
                       />
-                      {/* <TransactionItem
-                        date="March 24, 2024"
-                        company="Fifth Third"
-                        description="Failed"
-                        amount={"250.00"}
-                        transactionType="debit"
-                      /> */}
+
                       <TransactionItem
                         date="March 23, 2024"
                         company="Wells Fargo"
